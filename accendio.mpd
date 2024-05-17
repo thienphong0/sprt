@@ -1,0 +1,20 @@
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" type="static" mediaPresentationDuration="PT0H3M5.60S" minBufferTime="PT1.500S" suggestedPresentationDelay="PT0S" availabilityStartTime="2024-05-17T00:00:00Z" publishTime="2024-05-17T00:00:00Z" minimumUpdatePeriod="PT0S" timeShiftBufferDepth="PT0H3M5.60S">
+  <Period id="P0" start="PT0S">
+    <AdaptationSet id="1" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+      <Representation id="2" mimeType="video/mp4" codecs="avc1.4d401f" width="1280" height="720" frameRate="25/1">
+        <BaseURL>accendio/video.mpd</BaseURL>
+        <SegmentBase indexRangeExact="true" indexRange="911-1120">
+          <Initialization range="0-910"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="3" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+      <Representation id="4" mimeType="audio/mp4" codecs="mp4a.40.2" audioSamplingRate="48000">
+        <BaseURL>accendio/audio.mpd</BaseURL>
+        <SegmentBase indexRangeExact="true" indexRange="912-1121">
+          <Initialization range="0-911"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
